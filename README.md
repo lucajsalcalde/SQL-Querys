@@ -39,15 +39,5 @@ Utilizando os dados contidos no banco, desenvolver as consultas SQL que devem re
 
 **Especificação 4**. Seleciona todos os bovinos e equinos e retorna o id de cada animal, a sua espécie e a data de nascimento mais recente entre os seus filhotes (null caso não tenha), ordenado pelos animais com esta data mais recente e nulls por último:
 
-# Instruções
-
-1. Realize o fork deste projeto, deixando o fork como privado.
-2. Acesse o banco de dados
-3. Construa as queries que atendam as especificações descritas em `Desafio`
-4. Comite cada query no arquivo da sua respectiva especificação, ou seja, a `Especificação 1` no `Desafio` deve ser adicionada no arquivo `especificacao-1`, assim como as demais especificações.
-5. Disponibilize o desafio para:  
-`felippe.jose@granter.com.br`  
-`paulo.tessmer@granter.com.br`  
-`rodrigo.moretto@granter.com.br`  
 
 
