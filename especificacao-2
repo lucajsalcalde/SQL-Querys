@@ -1,0 +1,3 @@
+SELECT id_animal, lpad(CAST(nr_brinco AS VARCHAR),6,'0') AS nr_brinco
+FROM animal
+ORDER BY id_animal

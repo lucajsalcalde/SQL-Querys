@@ -1,0 +1,7 @@
+SELECT animal.id_animal, especie.nm_especie, NULLIF(CAST(dt_nascimento AS varchar),'') AS dt_nascimento
+FROM animal 
+JOIN especie ON
+animal.cd_especie = especie.id_especie
+WHERE cd_especie = 1 OR cd_especie = 2
+ORDER BY dt_nascimento DESC NULLS LAST
+

@@ -1,0 +1,6 @@
+SELECT DISTINCT propriedade.id_propriedade, cd_oficial, COUNT(DISTINCT id_animal) + COALESCE(SUM(DISTINCT qt_animais),0) AS qnt_animais
+FROM animal
+full JOIN propriedade ON animal.cd_propriedade = propriedade.id_propriedade
+left join saldo_propriedade ON propriedade.id_propriedade = saldo_propriedade.cd_propriedade
+GROUP BY(propriedade.id_propriedade,cd_oficial)
+ORDER BY(propriedade.id_propriedade)

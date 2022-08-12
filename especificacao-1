@@ -1,0 +1,6 @@
+SELECT id_animal, cd_oficial
+FROM animal
+JOIN propriedade ON
+propriedade.id_propriedade = animal.cd_propriedade 
+WHERE propriedade.dt_fim ISNULL AND animal.cd_especie = 2
+ORDER BY (animal.id_animal)
